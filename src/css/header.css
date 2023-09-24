@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(34, 34, 43);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    height: 50px;
+
+}
+
+.header>a {
+    text-decoration: none;
+}
+
+.header-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: var(--main-color);
+    font-weight: lighter;
+    font-size: 22px;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+
+
+.header-nav>a {
+    text-decoration: none;
+}
+
+.header-nav>a>p {
+    padding-right: 20px;
+    padding-top: 10px;
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-nav>a>p:hover {
+    color: var(--main-color);
+    text-shadow: 2px 2px 2px var(--main-color);
+}
+
+.menu-icon,
+.close-icon {
+
+    display: none !important;
+}
+
+/*mobile responsive  */
+
+@media screen and (max-width:700px) {
+
+    .header-nav>a>p {
+        /* display: none; */
+        color: var(--text-color);
+        padding-top: 70px;
+        font-size: 20px;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .header-nav {
+        background-color: var(--bg-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(100vh - 77px);
+
+
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 30px !important;
+        color: var(--text-color);
+        cursor: pointer;
+
+    }
+
+    .menu-icon,
+    .close-icon {
+        font-size: 30px !important;
+        color: var(--text-color);
+        cursor: pointer;
+        display: block !important;
+    }
+
+    .menu-icon.none {
+
+        display: none !important;
+    }
+
+}

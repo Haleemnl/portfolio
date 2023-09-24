@@ -1,0 +1,135 @@
+.home {
+    /* height: 100vh; */
+    margin-top: 20px;
+    height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 60px; */
+    margin-top: 13%;
+
+    margin-bottom: 130px;
+
+}
+
+
+.home-image>img {
+    object-fit: contain;
+    width: 190px;
+    margin-right: 60px;
+    padding: 10px;
+
+}
+
+.home-content {
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+.home-content>h1 {
+    margin-bottom: 25px;
+}
+
+.home-content>h1>span {
+    color: transparent;
+    background: linear-gradient(var(--main-color), rgb(253, 255, 255));
+    background-clip: text;
+    --webkit-background-clip: text;
+}
+
+.home-content>p {
+    margin-bottom: 25px;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+.home-icons-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.home-icons {
+    color: white !important;
+    border: 1px solid var(--main-color);
+    font-size: 40px !important;
+    padding: 6px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.home-icons:hover {
+    box-shadow: 1px 2px 3px 4px rgba(63, 165, 172, 0.623);
+}
+
+.home-content>a>button {
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    padding: 12px;
+    border: 1.5px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.home-content>a>button:hover {
+    background-color: rgb(63, 164, 172);
+    transform: scale(1.01);
+    box-shadow: 1px 2px 4px 4px rgba(63, 165, 172, 0.514);
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 200px; */
+        margin-bottom: 0;
+    }
+
+    .home-content {
+        width: 90%;
+        margin-left: 0;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+
+
+    .home-image>img {
+        object-fit: contain;
+        width: 50%;
+        /* overflow: hidden; */
+    }
+
+    .home-icons-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+
+    .home-icons {
+        width: 50px !important;
+    }
+
+    .home-content>button {
+        margin-bottom: 20PX;
+    }
+}

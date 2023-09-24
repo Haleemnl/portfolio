@@ -1,0 +1,118 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact>h1 {
+    margin-top: 20px;
+}
+
+.contact>p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: transparent;
+    background: linear-gradient(var(--main-color), rgb(253, 255, 255));
+    background-clip: text;
+    --webkit-background-clip: text;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.home-icons-container {
+    overflow: hidden;
+}
+
+.form-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin: 40px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info>input {
+    padding: 15px 25px;
+    width: 210px;
+    background: transparent;
+    outline: none;
+    box-shadow: 10px 10px 20px 3px #141414;
+    border: 1px solid #2e2e2e;
+    border-radius: 6px;
+    color: #c9c9c9;
+    margin-left: 15px;
+
+}
+
+.contact-message>textarea {
+    padding: 15px 25px;
+    width: 430px;
+    outline: none;
+    background: transparent;
+    box-shadow: 10px 10px 20px 3px #141414;
+    border: 1px solid #2e2e2e;
+    border-radius: 6px;
+    color: #c9c9c9;
+    margin-left: 15px;
+}
+
+
+
+
+.form-submit>input {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: white;
+    padding: 12px;
+    width: 100px;
+    /* margin-left: 70px; */
+}
+
+.form-submit>input:hover {
+    background-color: rgb(63, 164, 172);
+    transform: scale(1.01);
+    box-shadow: 1px 2px 4px 4px rgba(63, 165, 172, 0.514);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:700px) {
+
+
+    form {
+        overflow-x: hidden;
+        width: 90%;
+    }
+
+    .form-container {
+        width: 300px;
+        overflow-x: hidden;
+    }
+
+    .contact-info>input {
+        margin-bottom: 20px;
+        width: 250px;
+
+    }
+
+    .contact-message>textarea {
+        width: 250px;
+        overflow-x: hidden;
+
+    }
+
+
+}
