@@ -14,7 +14,7 @@ const Details = () => {
 
     const product = products.find((product) => product.id == id)
 
-    const { name, image, description, goto } = product
+    const { name, image, description, goto, technology } = product
 
     return (
 
@@ -44,7 +44,8 @@ const Details = () => {
                 <h1>{name}</h1>
                 <h3>Features:</h3>
 
-                <p> ⚪{description} </p>
+                <p> {description} </p>
+                <p> {technology} </p>
 
 
                 <div className="detail-buttons">
